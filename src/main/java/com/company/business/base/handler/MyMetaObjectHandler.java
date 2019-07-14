@@ -4,13 +4,6 @@ import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;
 import org.springframework.stereotype.Component;
 
-/**
- * MybatisPlus自动写入参数配置
- *
- * @author Li Jinhui
- * @update 2018/12/28 10:46
- * @since 2018/12/6 10:00
- */
 @Component
 public class MyMetaObjectHandler implements MetaObjectHandler {
 

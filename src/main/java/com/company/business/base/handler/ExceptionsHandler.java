@@ -14,13 +14,6 @@ import org.springframework.web.multipart.MaxUploadSizeExceededException;
 import org.springframework.web.multipart.support.MissingServletRequestPartException;
 import org.springframework.web.servlet.NoHandlerFoundException;
 
-/**
- * 全局异常接管
- *
- * @author Li Jinhui
- * @update 2019/1/7 09:22
- * @since 2018/12/6 10:00
- */
 @RestControllerAdvice
 public class ExceptionsHandler {
 

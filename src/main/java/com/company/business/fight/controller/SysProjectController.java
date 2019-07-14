@@ -2,11 +2,9 @@ package com.company.business.fight.controller;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.company.business.auth.annotation.Auth;
-import com.company.business.base.entity.Result;
 import com.company.business.fight.entity.SysProject;
 import com.company.business.fight.service.ISysProjectService;
-import com.company.business.user.entity.User;
+import com.company.business.base.entity.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -74,15 +72,6 @@ public class SysProjectController {
         } else {
             return new Result().fail("更新失败", 500);
         }
-    }
-
-    /**
-     * 查看用户列表
-     */
-    @GetMapping("/list2")
-    public Result list( @RequestParam Long userId) {
-        // 该接口需要检测用户是否登陆
-        return new Result().success("ok");
     }
 
 }

@@ -7,10 +7,6 @@ import java.lang.annotation.Target;
 
 /**
  * 认证注解
- *
- * @author Li Jinhui
- * @update 2019/1/7 09:49
- * @since 2018/12/7 10:00
  */
 @Target({ElementType.PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)

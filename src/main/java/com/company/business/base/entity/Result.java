@@ -2,13 +2,7 @@ package com.company.business.base.entity;
 
 import lombok.Getter;
 
-/**
- * 返回结果实体类
- *
- * @author Li Jinhui
- * @update 2019/1/7
- * @since 2018/12/6
- */
+
 @Getter
 public class Result {
     private int code;

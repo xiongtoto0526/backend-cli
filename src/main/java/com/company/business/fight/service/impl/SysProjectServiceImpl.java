@@ -1,8 +1,8 @@
 package com.company.business.fight.service.impl;
 
-import com.company.business.fight.entity.SysProject;
 import com.company.business.fight.mapper.SysProjectMapper;
 import com.company.business.fight.service.ISysProjectService;
+import com.company.business.fight.entity.SysProject;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
