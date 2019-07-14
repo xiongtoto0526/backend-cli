@@ -1,8 +1,9 @@
 # 开发环境配置文件
+logging:
+  config: classpath:logback/logback-dev.xml
 
 server:
   port: 8081     # Springboot占用端口
-
 spring:
   datasource:
     druid:

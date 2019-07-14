@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{30}:%line - %msg%n
+            </Pattern>
+        </layout>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>TRACE</level>
+        </filter>
+    </appender>
+
+    <logger level="DEBUG" name="java.sql.Statement">
+    </logger>
+    <logger level="DEBUG" name="java.sql.PreparedStatement">
+    </logger>
+
+    <!-- SQL执行返回结查，上线时请释掉，不要SQL输出返回 -->
+    <logger level="DEBUG" name="java.sql.ResultSet">
+    </logger>
+    <logger level="WARN" name="org.springframework">
+    </logger>
+    <logger level="WARN" name="springfox.documentation">
+    </logger>
+    <logger level="WARN" name="org.mybatis.spring">
+    </logger>
+    <logger level="WARN" name="org.eclipse.jetty">
+    </logger>
+    <logger level="WARN" name="io.undertow">
+    </logger>
+
+    <root level="DEBUG">
+        <appender-ref ref="consoleAppender"/>
+    </root>
+
+</configuration>

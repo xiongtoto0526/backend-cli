@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.business.fight.mapper.SysProjectMapper">
+
+    <delete id="delete" parameterType="com.company.business.fight.entity.SysProject">
+        delete from sys_project where 1=1
+        <if test="status != null">
+           and status = #{status}
+        </if>
+    </delete>
+</mapper>

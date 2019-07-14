@@ -15,6 +15,11 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @GetMapping("/test")
+    public Result test() {
+        return new Result().success("hello");
+    }
+
     /**
      * 登陆接口
      */

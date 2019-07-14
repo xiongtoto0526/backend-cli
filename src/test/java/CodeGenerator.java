@@ -66,7 +66,7 @@ public class CodeGenerator {
         pc.setParent(PROJECT);
         mpg.setPackageInfo(pc);
 
-        // 自定义配置
+        // 自定义配置(输出xml到resource目录)
          InjectionConfig cfg = new InjectionConfig() {
              @Override
              public void initMap() {
@@ -95,7 +95,7 @@ public class CodeGenerator {
         strategy.setRestControllerStyle(true);
         //strategy.setSuperControllerClass(PROJECT + ".base.BaseController");     // 自定义控制器继承
         strategy.setInclude(scanner("表名"));
-        strategy.setSuperEntityColumns("id");
+//        strategy.setSuperEntityColumns("id");
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setTablePrefix(pc.getModuleName() + "_");
         mpg.setStrategy(strategy);
