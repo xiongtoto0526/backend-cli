@@ -14,10 +14,10 @@ import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 
 public class CodeGenerator {
 
-    private static String AUTHOR = "xmaster";
-    private static String DATABASE = "seed";
-    private static String DATABASE_USERNAME = "root";
-    private static String DATABASE_PASSWORD = "123456";
+    private static String AUTHOR = "shanshui";
+    private static String DATABASE = "dami-dev";
+    private static String DATABASE_USERNAME = "dami_dev";
+    private static String DATABASE_PASSWORD = "cbRNueDlFeDOacOo";
     private static String PROJECT = "com.company.business";
 
     /**

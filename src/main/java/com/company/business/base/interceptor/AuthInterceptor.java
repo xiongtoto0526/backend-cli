@@ -1,10 +1,10 @@
 package com.company.business.base.interceptor;
 
 import com.company.business.auth.enums.TokenSubject;
-import com.company.business.auth.service.TokenService;
 import com.company.business.auth.exception.AuthException;
 import com.company.business.auth.exception.TokenException;
 import com.company.business.auth.exception.UnauthorizedException;
+import com.company.business.auth.service.TokenService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

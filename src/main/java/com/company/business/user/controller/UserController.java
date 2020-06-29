@@ -1,10 +1,10 @@
 package com.company.business.user.controller;
 
+import com.company.business.auth.annotation.Auth;
+import com.company.business.base.entity.Result;
 import com.company.business.user.data.SignInData;
 import com.company.business.user.data.SignUpData;
 import com.company.business.user.service.UserService;
-import com.company.business.auth.annotation.Auth;
-import com.company.business.base.entity.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -60,8 +60,8 @@ public class UserController {
      * 查看用户列表
      */
     @GetMapping("/list")
-    public Result list(@Auth Long userId) {
-        // 该接口需要检测用户是否登陆
+    public Result list(@Auth Integer userId) {
+        // 该接口需要检测用户是否登录
         return new Result().success(userService.list());
     }
 }

@@ -1,7 +1,5 @@
-package com.company.business.fight.entity;
+package com.company.business.dami.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -9,25 +7,22 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- *
+ * 
  * </p>
  *
- * @author xmaster
- * @since 2019-07-14
+ * @author shanshui
+ * @since 2020-06-29
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class SysProject implements Serializable {
+public class DmPipeline implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
     private String name;
-
-    private String status;
 
 
 }
