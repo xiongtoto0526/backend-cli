@@ -19,5 +19,5 @@ https://github.com/ocubexo/springboot-restful-starter
 2. @Auth注解，可以拿到userId
 3. resource/templates 可以自行修改，便于自定义生成代码片段（freemarker对应ftl文件）
 
-todo:
+- todo:
 1. 待集成swaggerUI
